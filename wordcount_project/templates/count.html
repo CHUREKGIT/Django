@@ -1,0 +1,12 @@
+<h1>Your senetence has {{count_word}} words</h1>
+
+<a href="{% url 'home'%}">Start Again</a>
+
+{% for word, number in popular %}
+<h3>Word '{{word}}' is in your sentense {{number}} times</h3>
+
+{% endfor %}
+
+<h2>Your Orginal text:</h2>
+{{fulltext}}
+
